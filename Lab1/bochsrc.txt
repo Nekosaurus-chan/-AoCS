@@ -1,0 +1,9 @@
+# Bochs configuration for booting NASM program
+megs: 32
+romimage: file=/usr/share/bochs/BIOS-bochs-latest
+vgaromimage: file=/usr/share/bochs/VGABIOS-lgpl-latest
+ata0-master: type=disk, path="lab1.bin", mode=flat, cylinders=1, heads=1, spt=1
+boot: disk
+log: bochsout.txt
+mouse: enabled=0
+clock: sync=realtime
